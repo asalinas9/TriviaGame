@@ -1,0 +1,64 @@
+body {
+        font-family: sans-serif;
+        background-image: url(../images/moviegrid2.jpeg);
+        text-align: center;
+}
+
+#start_container {
+    margin-left: 320px;
+    margin-right: 100px;
+    background-color: lightslategray;
+    text-align: center;
+    height: auto;
+    width: 700px;
+    padding: 30px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+h1 {
+    
+    font-family: fantasy;
+    font-style: bold;
+
+}
+
+.btn {
+    
+    width: 300px;
+    outline-color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#time {
+    
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+#mid_container {
+    margin-left: 320px;
+    margin-right: 100px;
+    background-color: lightslategray;
+    text-align: center;
+    height: auto;
+    width: 700px;
+    padding: 10px;
+	margin-top: 80px;
+	margin-bottom: 100px;
+
+}
+
+#end_container {
+    margin-left: 320px;
+    margin-right: 100px;
+    background-color: lightslategray;
+    text-align: center;
+    height: auto;
+    width: 700px;
+    padding: 10px;
+	margin-top: 100px;
+	margin-bottom: 500px;
+}
