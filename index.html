@@ -1,135 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 </head>
 <title>Movie Trivia Game</title>
+
 <body>
-  
-  <div id="start_container">
-  
-          <!-- Static Heading -->
-          <div class="col-lg-12"><h1 class="display-3"><strong>Movie Trivia!</strong></h1>
-          
-          </div>
-          
-          <button type="button" class="btn btn-default btn-lg" id="start">START</button>
-          
-  </div>
 
-  <div id="mid_container">
-      
-      <!-- Static Heading -->
-      
-      <div class="col-lg-12"><h1 class="display-3"><strong>Movie Trivia!</strong></h1>
-          
-      </div>
-       
-      <!-- Hide Paragraph For Timer -->
-          <br>
-          <h2 id="time"></h2>
-          <br>
-         
-      
-      <!-- Game Question -->
-      
-      <h5>Q.1:- What is the name of the spaceship that Han Solo captains?</h5>
-      
-      <!-- Millennium Falcon -->
-         
-          <input type="radio" name="q1" value=" Millennium Eagle ">Millennium Eagle
-          <input type="radio" name="q1" value=" Millennium Awl ">Millennium Awl
-          <input type="radio" name="q1" value=" Millennium Falcon ">Millennium Falcon
-          <input type="radio" name="q1" value=" Chubaca Falcon ">Chubaca Falcon
-     
-      <br><br>
-      
-      <h5>Q.2:- What is the name of the dog from Wizard of Oz?</h5>
-      
-      <!-- Toto -->
-         
-          <input type="radio" name="q2" value=" Spike">Spike
-          <input type="radio" name="q2" value=" Charlie">Charlie
-          <input type="radio" name="q2" value=" Toto ">Toto
-          <input type="radio" name="q2" value=" Buddy ">Buddy
-     
-      <br><br>
-      
-      <h5>Q.3:- What is the name of the prequel to the Silance of the Lambs?</h5>
-      
-      <!-- Red Dragon -->
-         
-          <input type="radio" name="q3" value="Red Dragon"> Red Dragon
-          <input type="radio" name="q3" value=" Manhunter"> Manhunter
-          <input type="radio" name="q3" value=" Hannibal "> Hannibal
-          <input type="radio" name="q3" value=" Hannibal Rising"> Hannibal Rising
-     
-     <br><br>
-      
-      <h5>Q.4:- Who is the famous director of Goodfellas?</h5>
-      <!-- Martin Scorsese -->
-         
-          <input type="radio" name="q4" value=" Quentin Tarantino"> Quentin Tarantino
-          <input type="radio" name="q4" value=" Steven Spielberg"> Steven Spielberg
-          <input type="radio" name="q4" value=" Martin Scorsese "> Martin Scorsese
-          <input type="radio" name="q4" value=" Christopher Nolan"> Christopher Nolan
-      
-      
-     <br><br>
-      
-       <h5>Q.5:- What was Forrest Gump's favorite pastime?</h5>
-      <!-- Running -->
-         
-          <input type="radio" name="q5" value=" Bicicling"> Bicicling
-          <input type="radio" name="q5" value="Running">  Running
-          <input type="radio" name="q5" value=" Fishing"> Fishing
-          <input type="radio" name="q5" value=" Ping Pong "> Ping Pong
-      <br>
-      <br>
-      
-      <h5>Q.6:- In what year was the original Jurassic Park film released?</h5>
-      <!-- 1993 -->
-         
-          <input type="radio" name="q6" value=" 1990"> 1990
-          <input type="radio" name="q6" value=" 1995">  1995
-          <input type="radio" name="q6" value="1993"> 1993
-          <input type="radio" name="q6" value=" 2000"> 2000
-     <br>
-     <br>
-       <!-- Done Button -->  
-     <button type="button" class="btn btn-default btn-lg" id="Done">Done</button>
-     
-  </div>
+    <div id="start_container">
 
-  <!-- End of the Game -->
-  
-  <div id="end_container">
-  
-      <div class="col-lg-12"><h1 class="display-3"><strong>Movie Trivia!</strong></h1>
-          
-      </div>
-      <br>
-      
-      <div id="alldone"><h1>All Done!</h1></div>
-      <br><br>
-        
-      <div id="correctAnswerd"><h3>Correct Answerd :</h3></div>
-      <br>
-      <div id="WrongAnswerd"><h3>Wrong Answerd :</h3></div>
-      <br>
-      <div id="unAnswerd"><h3>UnAnswerd :</h3></div>
-      
-      
-     <button type="button" class="btn btn-default btn-lg" id="Start-over">Start Over</button>
 
-  </div>
+        <!-- Static Heading -->
+        <div class="flexbox">
+            <h1 class="display-3"><strong>Movie Trivia!</strong></h1>
 
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+        </div>
+
+        <button type="button" class="btn btn-default btn-lg" id="start">START</button>
+
+    </div>
+
+    <div id="mid_container">
+
+        <!-- Static Heading -->
+
+        <div class="flexbox">
+            <h1 class="display-3"><strong>Movie Trivia!</strong></h1>
+
+        </div>
+
+        <!-- Hide Paragraph For Timer -->
+        <br>
+        <h2 id="time"></h2>
+        <br>
+
+
+        <!-- Game Question -->
+
+        <h5>Q.1:- What is the name of the spaceship that Han Solo captains?</h5>
+
+        <!-- Millennium Falcon -->
+
+        <input type="radio" name="q1" value=" Millennium Eagle ">Millennium Eagle
+        <input type="radio" name="q1" value=" Millennium Awl ">Millennium Awl
+        <input type="radio" name="q1" value=" Millennium Falcon ">Millennium Falcon
+        <input type="radio" name="q1" value=" Chubaca Falcon ">Chubaca Falcon
+
+        <br><br>
+
+        <h5>Q.2:- What is the name of the dog from Wizard of Oz?</h5>
+
+        <!-- Toto -->
+
+        <input type="radio" name="q2" value=" Spike">Spike
+        <input type="radio" name="q2" value=" Charlie">Charlie
+        <input type="radio" name="q2" value=" Toto ">Toto
+        <input type="radio" name="q2" value=" Buddy ">Buddy
+
+        <br><br>
+
+        <h5>Q.3:- What is the name of the prequel to the Silance of the Lambs?</h5>
+
+        <!-- Red Dragon -->
+
+        <input type="radio" name="q3" value="Red Dragon"> Red Dragon
+        <input type="radio" name="q3" value=" Manhunter"> Manhunter
+        <input type="radio" name="q3" value=" Hannibal "> Hannibal
+        <input type="radio" name="q3" value=" Hannibal Rising"> Hannibal Rising
+
+        <br><br>
+
+        <h5>Q.4:- Who is the famous director of Goodfellas?</h5>
+        <!-- Martin Scorsese -->
+
+        <input type="radio" name="q4" value=" Quentin Tarantino"> Quentin Tarantino
+        <input type="radio" name="q4" value=" Steven Spielberg"> Steven Spielberg
+        <input type="radio" name="q4" value=" Martin Scorsese "> Martin Scorsese
+        <input type="radio" name="q4" value=" Christopher Nolan"> Christopher Nolan
+
+
+        <br><br>
+
+        <h5>Q.5:- What was Forrest Gump's favorite pastime?</h5>
+        <!-- Running -->
+
+        <input type="radio" name="q5" value=" Bicicling"> Bicicling
+        <input type="radio" name="q5" value="Running"> Running
+        <input type="radio" name="q5" value=" Fishing"> Fishing
+        <input type="radio" name="q5" value=" Ping Pong "> Ping Pong
+        <br>
+        <br>
+
+        <h5>Q.6:- In what year was the original Jurassic Park film released?</h5>
+        <!-- 1993 -->
+
+        <input type="radio" name="q6" value=" 1990"> 1990
+        <input type="radio" name="q6" value=" 1995"> 1995
+        <input type="radio" name="q6" value="1993"> 1993
+        <input type="radio" name="q6" value=" 2000"> 2000
+        <br>
+        <br>
+        <!-- Done Button -->
+        <button type="button" class="btn btn-default btn-lg" id="Done">Done</button>
+
+    </div>
+
+    <!-- End of the Game -->
+
+    <div id="end_container">
+
+        <div class="flexbox">
+            <h1 class="display-3"><strong>Movie Trivia!</strong></h1>
+
+        </div>
+        <br>
+
+        <div id="alldone">
+            <h1>All Done!</h1>
+        </div>
+        <br><br>
+
+        <div id="correctAnswerd">
+            <h3>Correct Answerd :</h3>
+        </div>
+        <br>
+        <div id="WrongAnswerd">
+            <h3>Wrong Answerd :</h3>
+        </div>
+        <br>
+        <div id="unAnswerd">
+            <h3>UnAnswerd :</h3>
+        </div>
+
+
+        <button type="button" class="btn btn-default btn-lg" id="Start-over">Start Over</button>
+
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>

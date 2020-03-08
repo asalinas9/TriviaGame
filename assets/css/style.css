@@ -1,10 +1,16 @@
 body {
-        font-family: sans-serif;
-        background-image: url(../images/moviegrid2.jpeg);
-        text-align: center;
+    font-family: sans-serif;
+    background-image: url(../images/moviegrid2.jpeg);
+    text-align: center;
 }
 
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #start_container {
+    position: absolute;
     margin-left: 320px;
     margin-right: 100px;
     background-color: lightslategray;
@@ -14,6 +20,11 @@ body {
     padding: 30px;
 	margin-top: 60px;
 	margin-bottom: 60px;
+}
+
+.display-3 {
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -39,6 +50,7 @@ h1 {
 }
 
 #mid_container {
+    position: absolute;
     margin-left: 320px;
     margin-right: 100px;
     background-color: lightslategray;
@@ -52,6 +64,7 @@ h1 {
 }
 
 #end_container {
+    position: absolute;
     margin-left: 320px;
     margin-right: 100px;
     background-color: lightslategray;

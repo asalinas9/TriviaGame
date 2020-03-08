@@ -164,3 +164,4 @@ $(document).ready(function() {
    
    
 });
+//Clock/Timer = setInterval(thirtySeconds, 3000);
