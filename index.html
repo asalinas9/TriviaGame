@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-			integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-			crossorigin="anonymous"
-		/>
-	</head>
-	<title>Movie Trivia Game</title>
 
-	<body>
-		<div class="container">
-			<div id="start_container">
-				<!-- Static Heading -->
-				<div class="row">
-					<h1 class="display-3"><strong>Movie Trivia!</strong></h1>
-				</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+		integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+</head>
+<title>Movie Trivia Game</title>
 
-				<button type="button" class="btn btn-default btn-lg" id="start">
-					START
-				</button>
+<body>
+	<div class="container">
+		<div id="start_container">
+			<!-- Static Heading -->
+			<div class="jumbotron bg-primary text-white text-center">
+				<h1 class="display-1"><strong>Movie Trivia!</strong></h1>
 			</div>
+
+
+			<button type="button" class="btn btn-default btn-lg" id="start">
+				START
+			</button>
 		</div>
+	</div>
+	</div>
 
-		<div class="container">
-			<div id="mid_container">
-				<!-- Static Heading -->
+	<div class="container">
+		<div id="mid_container">
+			<!-- Static Heading -->
 
-				<div class="flexbox">
-					<h1 class="display-3"><strong>Movie Trivia!</strong></h1>
-				</div>
+			<div class="jumbotron bg-primary text-white text-center">
+				<h1 class="display-1"><strong>Movie Trivia!</strong></h1>
+			</div>
 
-				<!-- Hide Paragraph For Timer -->
-				<br />
-				<h2 id="time"></h2>
-				<br />
+			<!-- Hide Paragraph For Timer -->
+			<br />
+			<h2 id="time"></h2>
+			<br />
 
-				<!-- Game Question -->
+			<!-- Game Question -->
 
-				<h5>Q.1:- What is the name of the spaceship that Han Solo captains?</h5>
+			<h5 class="font-color">Q.1:- What is the name of the spaceship that Han Solo captains?</h5>
 
-				<!-- Millennium Falcon -->
-
+			<!-- Millennium Falcon -->
+			<div class="font-color">
 				<input type="radio" name="q1" value=" Millennium Eagle " />Millennium
 				Eagle
 				<input type="radio" name="q1" value=" Millennium Awl " />Millennium Awl
@@ -59,7 +55,7 @@
 
 				<br /><br />
 
-				<h5>Q.2:- What is the name of the dog from Wizard of Oz?</h5>
+				<h5 class="font-color">Q.2:- What is the name of the dog from Wizard of Oz?</h5>
 
 				<!-- Toto -->
 
@@ -70,7 +66,7 @@
 
 				<br /><br />
 
-				<h5>
+				<h5 class="font-color">
 					Q.3:- What is the name of the prequel to the Silance of the Lambs?
 				</h5>
 
@@ -84,7 +80,7 @@
 
 				<br /><br />
 
-				<h5>Q.4:- Who is the famous director of Goodfellas?</h5>
+				<h5 class="font-color">Q.4:- Who is the famous director of Goodfellas?</h5>
 				<!-- Martin Scorsese -->
 
 				<input type="radio" name="q4" value=" Quentin Tarantino" /> Quentin
@@ -98,7 +94,7 @@
 
 				<br /><br />
 
-				<h5>Q.5:- What was Forrest Gump's favorite pastime?</h5>
+				<h5 class="font-color">Q.5:- What was Forrest Gump's favorite pastime?</h5>
 				<!-- Running -->
 
 				<input type="radio" name="q5" value=" Bicicling" /> Bicicling
@@ -108,7 +104,7 @@
 				<br />
 				<br />
 
-				<h5>
+				<h5 class="font-color">
 					Q.6:- In what year was the original Jurassic Park film released?
 				</h5>
 				<!-- 1993 -->
@@ -126,36 +122,39 @@
 			</div>
 		</div>
 
+
 		<!-- End of the Game -->
 		<div class="container">
 			<div id="end_container">
-				<div class="flexbox">
-					<h1 class="display-3"><strong>Movie Trivia!</strong></h1>
+				<div class="jumbotron bg-primary text-white text-center">
+					<h1 class="display-1"><strong>Movie Trivia!</strong></h1>
 				</div>
 				<br />
 
-				<div id="alldone">
+				<div id="alldone" class="font-color">
 					<h1>All Done!</h1>
 				</div>
 				<br /><br />
 
-				<div id="correctAnswerd">
-					<h3>Correct Answerd :</h3>
+				<div id="correctAnswerd" class="font-color">
+					<h2>Correct Answerd :</h2>
 				</div>
 				<br />
-				<div id="WrongAnswerd">
-					<h3>Wrong Answerd :</h3>
+				<div id="WrongAnswerd" class="font-color">
+					<h2>Wrong Answerd :</h2>
 				</div>
 				<br />
-				<div id="unAnswerd">
-					<h3>UnAnswerd :</h3>
+				<div id="unAnswerd" class="font-color">
+					<h2>UnAnswerd :</h2>
 				</div>
 
-				<button type="button" class="btn btn-default btn-lg" id="Start-over">
+				<button type="button" class="btn btn-default btn-lg" id="start-over">
 					Start Over
 				</button>
 			</div>
 		</div>
-		<script type="text/javascript" src="assets/javascript/app.js"></script>
-	</body>
+	</div>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
 </html>

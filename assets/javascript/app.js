@@ -3,7 +3,7 @@ var unAnswerd = 0;
 var correctAnswerd = 0;
 var wrongAnswerd = 0;
 
-$(document).ready(function() {
+$(document).ready(function () {
 	// Hide the Mid Container and End Container
 
 	$('#mid_container').hide();
@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 	//start activate
 
-	$('#start').on('click', function() {
+	$('#start').on('click', function () {
 		//after on click function start container Hides and Mid container Shows
 
 		$('#start_container').hide();
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 		//before or after when click on done button
 
-		$('#Done').on('click', function() {
+		$('#Done').on('click', function () {
 			count = 0;
 			return;
 		});
@@ -135,7 +135,7 @@ $(document).ready(function() {
 		$('#end_container').show();
 	}
 
-	$('#Start-over').on('click', function() {
+	$('#start-over').on('click', function () {
 		// Location relod
 		location.reload();
 	});
