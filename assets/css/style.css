@@ -12,8 +12,14 @@ body {
 	text-align: center;
 }
 
-#start {
+.jumbotron {
+	opacity: .7;
+}
+
+#start, #Done, #start-over, a {
 	align-items: center;
+	color: rgba(14, 117, 241, 0.728);
+	opacity: .7;
 }
 
 
