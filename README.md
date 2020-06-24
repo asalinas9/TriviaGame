@@ -1,5 +1,7 @@
 # TriviaGame
-https://asalinas9.github.io/TriviaGame/
+
+[Github Page](https://asalinas9.github.io/TriviaGame/)
+
 
 # Game Rules
 
